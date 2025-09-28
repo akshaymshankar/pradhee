@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pradheeka R - Personal Website</title>
+    <meta name="description" content="A magical corner of the internet with Ghibli-inspired stories and lavender dreams">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div id="loading-screen" class="loading-screen">
+        <div class="loading-container">
+            <div class="loading-cat">
+                <div class="cat-face">
+                    <div class="cat-ears">
+                        <div class="ear left-ear"></div>
+                        <div class="ear right-ear"></div>
+                    </div>
+                    <div class="cat-eyes">
+                        <div class="eye left-eye"></div>
+                        <div class="eye right-eye"></div>
+                    </div>
+                    <div class="cat-nose"></div>
+                    <div class="cat-mouth"></div>
+                    <div class="cat-whiskers">
+                        <div class="whisker w1"></div>
+                        <div class="whisker w2"></div>
+                        <div class="whisker w3"></div>
+                        <div class="whisker w4"></div>
+                        <div class="whisker w5"></div>
+                        <div class="whisker w6"></div>
+                    </div>
+                </div>
+                <div class="cat-paws">
+                    <div class="paw left-paw"></div>
+                    <div class="paw right-paw"></div>
+                </div>
+            </div>
+            <div class="loading-progress">
+                <div class="progress-bar">
+                    <div class="progress-fill" id="progress-fill"></div>
+                </div>
+                <div class="progress-text" id="progress-text">0%</div>
+            </div>
+            <div class="loading-sparkles">
+                <div class="sparkle s1">✨</div>
+                <div class="sparkle s2">⭐</div>
+                <div class="sparkle s3">💜</div>
+                <div class="sparkle s4">✨</div>
+                <div class="sparkle s5">⭐</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Website -->
+    <div id="main-content" class="main-content hidden">
+        <!-- Navigation -->
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="nav-logo">
+                    <span class="cat-icon">🐱</span>
+                    <span class="logo-text">Pradheeka</span>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="#home" class="nav-link active">Home</a></li>
+                    <li><a href="#blog" class="nav-link">Blog</a></li>
+                    <li><a href="#my-space" class="nav-link">My Space</a></li>
+                    <li><a href="#my-world" class="nav-link">My World</a></li>
+                    <li><a href="#gallery" class="nav-link">Gallery</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <!-- Breadcrumbs (hidden by default) -->
+        <div id="breadcrumbs" class="breadcrumbs hidden">
+            <div class="container">
+                <nav class="breadcrumb-nav">
+                    <a href="#home" class="breadcrumb-link">🏠 Home</a>
+                    <span class="breadcrumb-separator">></span>
+                    <a href="#blog" class="breadcrumb-link" id="blog-breadcrumb">📖 Blog</a>
+                    <span class="breadcrumb-separator hidden" id="post-separator">></span>
+                    <span class="breadcrumb-current hidden" id="post-breadcrumb">Current Post</span>
+                    <a href="#my-space" class="breadcrumb-link hidden" id="space-breadcrumb">💜 My Space</a>
+                    <span class="breadcrumb-separator hidden" id="category-separator">></span>
+                    <span class="breadcrumb-current hidden" id="category-breadcrumb">Category</span>
+                </nav>
+            </div>
+        </div>
+
+        <!-- Home Section -->
+        <section id="home" class="section home-section active">
+            <div class="container">
+                <div class="hero-content">
+                    <div class="profile-container">
+                        <div class="profile-photo">
+                            <div class="profile-placeholder">
+                                <span class="profile-emoji">👧🏻</span>
+                            </div>
+                        </div>
+                        <h1 class="profile-name">Pradheeka</h1>
+                        <p class="profile-bio">Welcome to my little corner of the internet ✨</p>
+                    </div>
+                    
+                    <div class="my-space-preview">
+                        <h2>My Space 💜</h2>
+                        <div class="space-cards">
+                            <div class="space-card" onclick="openNoteCategory('feminism')">
+                                <div class="card-icon">💜</div>
+                                <h3>Feminism & Empowerment</h3>
+                                <p>My thoughts on modern feminism and female empowerment...</p>
+                            </div>
+                            <div class="space-card" onclick="openNoteCategory('creative')">
+                                <div class="card-icon">✨</div>
+                                <h3>Creative Ideas</h3>
+                                <p>A space for my artistic and creative inspirations...</p>
+                            </div>
+                            <div class="space-card" onclick="openNoteCategory('philosophy')">
+                                <div class="card-icon">🌸</div>
+                                <h3>Life Philosophy</h3>
+                                <p>Reflections on life, love, and everything in between...</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="floating-cats">
+                <div class="floating-cat cat1">😸</div>
+                <div class="floating-cat cat2">😻</div>
+                <div class="floating-cat cat3">🐾</div>
+            </div>
+        </section>
+
+        <!-- Blog Listing Section -->
+        <section id="blog" class="section blog-section">
+            <div class="container">
+                <h2 class="section-title">My Ghibli Art Blog 📖</h2>
+                <p class="section-subtitle">A magical journey through Studio Ghibli stories and personal reflections</p>
+                <div class="blog-grid">
+                   
+                    
+                    
+
+                    <article class="blog-card" onclick="showBlogPost('unattentive-dreamer')">
+                        <div class="blog-image">
+                            <div class="ghibli-placeholder">🌙</div>
+                        </div>
+                        <div class="blog-content">
+                            <div class="blog-meta">
+                                <span class="blog-category">Unattentive Dreamer</span>
+                                <span class="blog-date">September 18, 2025</span>
+                            </div>
+                            <h3>Unattentive Dreamer</h3>
+                            <p class="blog-preview">Love, magic, and self-acceptance in a world where beauty comes from within...</p>
+                            <div class="blog-footer">
+                                <span class="read-time">5 min read</span>
+                                <span class="read-more">Read More →</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="blog-card" onclick="showBlogPost('hockey-journey-pradheeka')">
+                        <div class="blog-image">
+                            <div class="ghibli-placeholder">🏑</div>
+                        </div>
+                        <div class="blog-content">
+                            <div class="blog-meta">
+                                <span class="blog-category">Hockey & Me</span>
+                                <span class="blog-date">September 15, 2025</span>
+                            </div>
+                            <h3>Hockey & Me</h3>
+                            <p class="blog-preview">In Search of myself...</p>
+                            <div class="blog-footer">
+                                <span class="read-time">6 min read</span>
+                                <span class="read-more">Read More →</span>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Blog Post View Section -->
+        <section id="blog-post" class="section blog-post-section">
+            <div class="container">
+                <article id="blog-post-content" class="blog-post-content">
+                    <!-- Dynamic blog post content will be inserted here -->
+                </article>
+                
+                <!-- Comments Section -->
+                <div class="comments-section">
+                    <h3>Leave a Comment 💜</h3>
+                    <div class="comment-form">
+                        <input type="text" placeholder="Your name..." class="form-control">
+                        <textarea placeholder="Share your thoughts..." class="form-control"></textarea>
+                        <button class="btn btn--primary">Post Comment 🌸</button>
+                    </div>
+                    <div class="sample-comments">
+                        <div class="comment">
+                            <div class="comment-header">
+                                <strong>Ghibli Fan 🌟</strong>
+                                <span class="comment-date">2 days ago</span>
+                            </div>
+                            <p>Your writing always brings back such beautiful memories! Thank you for sharing these magical moments. 💕</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- My Space Section -->
+        <section id="my-space" class="section my-space-section">
+            <div class="container">
+                <h2 class="section-title">My Space 🌟</h2>
+                <p class="section-subtitle">Ideas, feminism, and personal reflections</p>
+                <div class="space-content">
+                    <div class="space-item" onclick="openNoteCategory('feminism')">
+                        <div class="space-header">
+                            <span class="space-icon">💜</span>
+                            <h3>Feminism & Empowerment</h3>
+                        </div>
+                        <div class="space-body">
+                            <p>My thoughts on modern feminism and female empowerment. Click to explore my notes and ideas on gender equality, women's rights, and supporting each other.</p>
+                            <button class="btn btn--secondary btn--sm" style="margin-top: 1rem;">Open Notes →</button>
+                        </div>
+                    </div>
+                    <div class="space-item" onclick="openNoteCategory('creative')">
+                        <div class="space-header">
+                            <span class="space-icon">✨</span>
+                            <h3>Creative Ideas</h3>
+                        </div>
+                        <div class="space-body">
+                            <p>A space for my artistic and creative inspirations. Click to explore my creative projects, art ideas, and artistic discoveries.</p>
+                            <button class="btn btn--secondary btn--sm" style="margin-top: 1rem;">Open Notes →</button>
+                        </div>
+                    </div>
+                    <div class="space-item" onclick="openNoteCategory('philosophy')">
+                        <div class="space-header">
+                            <span class="space-icon">🌸</span>
+                            <h3>Life Philosophy</h3>
+                        </div>
+                        <div class="space-body">
+                            <p>Reflections on life, love, and everything in between. Click to explore my personal philosophies and life lessons.</p>
+                            <button class="btn btn--secondary btn--sm" style="margin-top: 1rem;">Open Notes →</button>
+                        </div>
+                    </div>
+                    <div class="space-item" onclick="openNoteCategory('dreams')">
+                        <div class="space-header">
+                            <span class="space-icon">🌟</span>
+                            <h3>Dreams & Aspirations</h3>
+                        </div>
+                        <div class="space-body">
+                            <p>My dreams, goals, and aspirations for the future. Click to explore my hopes and plans for what's to come.</p>
+                            <button class="btn btn--secondary btn--sm" style="margin-top: 1rem;">Open Notes →</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Category Notes Sections -->
+        <section id="feminism-notes" class="section category-notes-section">
+            <div class="container">
+                <div class="category-header">
+                    <div class="category-nav">
+                        <button class="btn btn--outline" onclick="navigateToSection('my-space')">← Back to My Space</button>
+                    </div>
+                    <div class="category-title">
+                        <span class="category-icon">💜</span>
+                        <h2>Feminism & Empowerment</h2>
+                    </div>
+                    <p class="category-description">My thoughts on modern feminism and female empowerment</p>
+                </div>
+                <div class="notes-container">
+                    <div class="notes-header">
+                        <div class="notes-search">
+                            <input type="text" id="feminism-search" placeholder="Search notes..." class="form-control">
+                        </div>
+                        <button class="btn btn--primary" onclick="openNoteModal('feminism')">Add New Note ✨</button>
+                    </div>
+                    <div class="notes-stats">
+                        <span id="feminism-count">0 notes</span>
+                    </div>
+                    <div class="notes-grid" id="feminism-notes-grid">
+                        <!-- Notes will be dynamically added here -->
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="creative-notes" class="section category-notes-section">
+            <div class="container">
+                <div class="category-header">
+                    <div class="category-nav">
+                        <button class="btn btn--outline" onclick="navigateToSection('my-space')">← Back to My Space</button>
+                    </div>
+                    <div class="category-title">
+                        <span class="category-icon">✨</span>
+                        <h2>Creative Ideas</h2>
+                    </div>
+                    <p class="category-description">A space for my artistic and creative inspirations</p>
+                </div>
+                <div class="notes-container">
+                    <div class="notes-header">
+                        <div class="notes-search">
+                            <input type="text" id="creative-search" placeholder="Search notes..." class="form-control">
+                        </div>
+                        <button class="btn btn--primary" onclick="openNoteModal('creative')">Add New Note ✨</button>
+                    </div>
+                    <div class="notes-stats">
+                        <span id="creative-count">0 notes</span>
+                    </div>
+                    <div class="notes-grid" id="creative-notes-grid">
+                        <!-- Notes will be dynamically added here -->
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="philosophy-notes" class="section category-notes-section">
+            <div class="container">
+                <div class="category-header">
+                    <div class="category-nav">
+                        <button class="btn btn--outline" onclick="navigateToSection('my-space')">← Back to My Space</button>
+                    </div>
+                    <div class="category-title">
+                        <span class="category-icon">🌸</span>
+                        <h2>Life Philosophy</h2>
+                    </div>
+                    <p class="category-description">Reflections on life, love, and everything in between</p>
+                </div>
+                <div class="notes-container">
+                    <div class="notes-header">
+                        <div class="notes-search">
+                            <input type="text" id="philosophy-search" placeholder="Search notes..." class="form-control">
+                        </div>
+                        <button class="btn btn--primary" onclick="openNoteModal('philosophy')">Add New Note ✨</button>
+                    </div>
+                    <div class="notes-stats">
+                        <span id="philosophy-count">0 notes</span>
+                    </div>
+                    <div class="notes-grid" id="philosophy-notes-grid">
+                        <!-- Notes will be dynamically added here -->
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="dreams-notes" class="section category-notes-section">
+            <div class="container">
+                <div class="category-header">
+                    <div class="category-nav">
+                        <button class="btn btn--outline" onclick="navigateToSection('my-space')">← Back to My Space</button>
+                    </div>
+                    <div class="category-title">
+                        <span class="category-icon">🌟</span>
+                        <h2>Dreams & Aspirations</h2>
+                    </div>
+                    <p class="category-description">My dreams, goals, and aspirations for the future</p>
+                </div>
+                <div class="notes-container">
+                    <div class="notes-header">
+                        <div class="notes-search">
+                            <input type="text" id="dreams-search" placeholder="Search notes..." class="form-control">
+                        </div>
+                        <button class="btn btn--primary" onclick="openNoteModal('dreams')">Add New Note ✨</button>
+                    </div>
+                    <div class="notes-stats">
+                        <span id="dreams-count">0 notes</span>
+                    </div>
+                    <div class="notes-grid" id="dreams-notes-grid">
+                        <!-- Notes will be dynamically added here -->
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- My World Section -->
+        <section id="my-world" class="section my-world-section">
+            <div class="container">
+                <h2 class="section-title">My World 🌸</h2>
+                <p class="section-subtitle">Personal notes and things I'd like to share</p>
+                <div class="notes-container">
+                    <div class="add-note-form">
+                        <input type="text" id="note-title" placeholder="Note title..." class="form-control">
+                        <textarea id="note-content" placeholder="Share something from your world..." class="form-control"></textarea>
+                        <button id="add-note-btn" class="btn btn--primary">Add Note 🐾</button>
+                    </div>
+                    <div class="notes-grid" id="notes-grid">
+                        <!-- Notes will be dynamically added here -->
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Gallery Section -->
+      <section id="gallery" class="section gallery-section">
+    <div class="container">
+        <h2 class="section-title">Gallery 🎨</h2>
+        <p class="section-subtitle">A collection of beautiful moments and inspirations</p>
+        <div class="gallery-grid">
+            <div class="gallery-item">
+                <img src="image1.jpg" alt="Cherry Blossoms" class="gallery-image" />
+              
+            </div>
+            <div class="gallery-item">
+                <img src="image2.jpg" alt="Moonlight Dreams" class="gallery-image" />
+        
+            </div>
+            <div class="gallery-item">
+                <img src="image3.jpg" alt="Butterfly Garden" class="gallery-image" />
+                
+            </div>
+            <div class="gallery-item">
+                <img src="image4.jpg" alt="Butterfly Garden" class="gallery-image" />
+                
+            </div>
+            <div class="gallery-item">
+                <img src="image5.jpg" alt="Butterfly Garden" class="gallery-image" />
+                
+            </div>
+            
+        </div>
+    </div>
+</section>
+
+
+        <!-- Contact Section -->
+        <section id="contact" class="section contact-section">
+            <div class="container">
+                <h2 class="section-title">Tell Me How Much You Love Me 💕</h2>
+                <p class="section-subtitle">Send me your love and I'll receive it in my email!</p>
+                <div class="love-form-container">
+                    <form id="love-form" class="love-form">
+                        <div class="form-group">
+                            <label class="form-label">Your Name</label>
+                            <input type="text" id="sender-name" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label">Your Email</label>
+                            <input type="email" id="sender-email" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label">How much do you love me? 💜</label>
+                            <div class="love-rating">
+                                <input type="range" id="love-slider" min="1" max="100" value="50" class="love-range">
+                                <span class="love-value" id="love-value">50%</span>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label">Your Message</label>
+                            <textarea id="love-message" class="form-control" placeholder="Tell me how much you love me..."></textarea>
+                        </div>
+                        <button type="submit" class="btn btn--primary btn--full-width paw-button">
+                            Send Love 🐾
+                        </button>
+                    </form>
+                    <div class="love-hearts">
+                        <div class="heart h1">💜</div>
+                        <div class="heart h2">💕</div>
+                        <div class="heart h3">💖</div>
+                        <div class="heart h4">💜</div>
+                    </div>
+                </div>
+                <div id="form-success" class="form-success hidden">
+                    <div class="success-content">
+                        <h3>Love Received! 💕</h3>
+                        <p>Your message has been sent to my heart (and email)! Thank you for sharing your love! 🐱</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="container">
+                <div class="footer-content">
+                    <div class="sleeping-cat">😴</div>
+                    <p>&copy; 2025 Your Name. Made with 💜 and lots of cats</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <!-- Note Modal -->
+    <div id="note-modal" class="modal hidden">
+        <div class="modal-overlay" onclick="closeNoteModal()"></div>
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 id="modal-title">Add New Note</h3>
+                <button class="modal-close" onclick="closeNoteModal()">✕</button>
+            </div>
+            <div class="modal-body">
+                <form id="note-form">
+                    <div class="form-group">
+                        <label class="form-label">Title</label>
+                        <input type="text" id="modal-note-title" class="form-control" required>
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label">Content</label>
+                        <textarea id="modal-note-content" class="form-control" rows="10" required></textarea>
+                    </div>
+                    <div class="form-stats">
+                        <span id="word-count">0 words</span>
+                        <span id="char-count">0 characters</span>
+                    </div>
+                    <div class="form-actions">
+                        <button type="button" class="btn btn--outline" onclick="closeNoteModal()">Cancel</button>
+                        <button type="submit" class="btn btn--primary">Save Note 💜</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
