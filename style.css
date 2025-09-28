@@ -1096,25 +1096,25 @@ select.form-control {
   padding: 5px;
   box-shadow: 0 20px 40px rgba(186, 85, 211, 0.3);
 }
-
 .profile-placeholder {
-  width: 100%;
-  height: 100%;
-  border-radius: 50%;
-  background: var(--color-surface);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 4rem;
+    width: 150px;          /* Adjust size as needed */
+    height: 150px;
+    border-radius: 50%;    /* Circle shape */
+    overflow: hidden;      /* Crop overflow parts */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 3px solid #BA55D3;  /* Optional lavender border */
+    box-shadow: 0 4px 8px rgba(186, 85, 211, 0.3); /* Subtle shadow */
+    background-color: #fff;      /* Optional background */
 }
 
-.profile-name {
-  font-size: 3rem;
-  color: #9370DB;
-  margin-bottom: 1rem;
-  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+.profile-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;     /* Maintain aspect ratio, fill container */
+    display: block;
 }
-
 .profile-bio {
   font-size: 1.2rem;
   color: var(--color-text-secondary);
