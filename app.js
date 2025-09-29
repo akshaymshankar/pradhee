@@ -172,58 +172,56 @@ const blogPosts = {
       <p>Howl's Moving Castle reminds us that real love isn't about finding someone perfect, but about finding someone whose imperfections dance beautifully with our own, creating something stronger and more magical than either person could be alone.</p>
     `
   },
-  'mononoke-nature': {
-    id: 'mononoke-nature',
-    title: 'Princess Mononoke Nature',
-    category: 'Nature & Balance',
-    date: 'September 15, 2025',
-    readTime: '6 min read',
-    heroEmoji: '🦌',
-    content: `
-      <p>Princess Mononoke opened my eyes to the delicate balance between humanity and nature, showing me that environmental consciousness isn't just about preserving the planet – it's about preserving our own souls. In Ashitaka's journey between the human world and the forest, I see the struggle we all face to find harmony in an increasingly divided world.</p>
+  'hockey-journey': {
+  id: 'hockey-journey',
+  title: 'Breaking Chains with Hockey',
+  category: 'Inspiration & Resilience',
+  date: 'September 29, 2025',
+  readTime: '7 min read',
+  heroEmoji: '🏑',
+  content: `
+      <p>I am Pradheeka, a village girl from Puliyampatty, Erode. I was born into a world where tradition and taboos weighed heavily, where the lives of girls were often shaped by orthodoxy rather than dreams. Yet, in the middle of this, I found a spark that changed my life forever – hockey.</p>
       
-      <h3>The Curse and the Gift</h3>
-      <p>Ashitaka's curse is also his gift – it gives him the strength to fight, but at a terrible cost. This duality reflects how I think about my own relationship with anger and passion about environmental issues. The rage I feel about climate change, deforestation, and species extinction can either consume me or fuel positive action.</p>
-      
-      <div class="post-image">
-        <div class="post-image-placeholder">🌲</div>
-      </div>
-      
-      <p>Like Ashitaka, I've learned that the most powerful response to environmental destruction isn't pure anger or pure peace, but the determination to see clearly and act with both compassion and strength. The curse teaches us that we cannot remain neutral in the face of injustice, but neither can we let hatred consume us.</p>
-      
-      <h3>San's Wild Heart</h3>
-      <p>San, raised by wolves and devoted to the forest, represents something wild and pure that most of us have lost touch with. She fights with the ferocity of someone whose entire world is under threat. In her, I see every activist who has ever been called extreme for defending what they love.</p>
+      <h3>The Forbidden Dream</h3>
+      <p>In my high school days, I first saw hockey being played. The speed, the energy, the fire in every strike pulled me in instantly. But in my home, a girl picking up a hockey stick was unthinkable. Every voice around me said no – except one. My father.</p>
       
       <div class="post-image">
-        <div class="post-image-placeholder">🐺</div>
+        <div class="post-image-placeholder">🏡</div>
       </div>
       
-      <p>But San's journey also teaches us about the importance of connection beyond our immediate tribe. Her initial hatred of all humans begins to soften when she meets Ashitaka, not because she abandons her principles, but because she learns that healing requires building bridges, not just walls.</p>
+      <p>My father, even in our orthodox home, saw my eyes light up with every mention of the game. Against the weight of traditions and whispers from society, he stood by me. He was my shield, my strength, and the reason I dared to chase something that was never meant for me.</p>
       
-      <h3>Lady Eboshi's Complexity</h3>
-      <p>What makes Princess Mononoke so profound is that it refuses to create simple villains. Lady Eboshi destroys the forest, yes, but she also provides work and dignity for society's outcasts – former prostitutes, lepers, people with nowhere else to go. Her Iron Town represents progress and community, even as it threatens the natural world.</p>
+      <h3>The Struggle and the Field</h3>
+      <p>When I first stepped onto the field, it wasn’t just a game – it was a rebellion, a declaration that I too had a voice. The struggles didn’t vanish. People mocked, questioned, and doubted. But with every drop of sweat and every bruise, I grew stronger. Hockey became not just my sport, but my language of freedom.</p>
       
       <div class="post-image">
-        <div class="post-image-placeholder">🏭</div>
+        <div class="post-image-placeholder">🏑</div>
       </div>
       
-      <p>Eboshi's character forces us to confront uncomfortable truths about environmental issues: they're not just about choosing between good and evil, but about navigating competing needs, finding ways to support human flourishing without destroying the systems that sustain all life.</p>
+      <p>From local tournaments to bigger arenas, I didn’t just play – I conquered. Every victory was proof that dreams are stronger than taboos, and passion is louder than silence. The girl they thought would stay confined to walls was now dominating open fields.</p>
       
-      <h3>The Forest Spirit's Wisdom</h3>
-      <p>The Forest Spirit – both creator and destroyer, beautiful deer by day and night-walker of death – embodies nature's fundamental truth: life and death are inseparable, and both are necessary for renewal. When the Spirit's head is severed, its death brings devastation but also new growth.</p>
+      <h3>The Doorway to a New World</h3>
+      <p>Sports didn’t just change my days – it changed my destiny. Through sports counseling, I entered PSG Tech, carrying my hockey stick as both a weapon and a story. Every time I walk on campus, I carry the pride of my village, my family, and every girl who dreams of breaking free.</p>
       
       <div class="post-image">
-        <div class="post-image-placeholder">🌺</div>
+        <div class="post-image-placeholder">🎓</div>
       </div>
       
-      <p>This cyclical understanding of destruction and renewal has changed how I think about environmental challenges. Sometimes things must die for new life to emerge. Sometimes the old ways must be released for better systems to grow. The key is learning to participate consciously in cycles of change rather than fighting them.</p>
+      <p>Hockey wasn’t just a game to me – it was my revolution, my escape, my freedom. It gave me a stage where my courage mattered more than my gender, and my strength spoke louder than tradition.</p>
       
-      <h3>Living with Clear Eyes</h3>
-      <p>The film's ending doesn't offer easy solutions – the forest is forever changed, Iron Town must be rebuilt, and the tension between human needs and environmental health remains. But Ashitaka and San choose to live with "eyes unclouded by hate," committed to seeing clearly and acting with love.</p>
+      <h3>Eyes Unclouded by Fear</h3>
+      <p>Looking back, I see that my story isn’t just about hockey. It’s about breaking barriers with love and support, about a father who chose to stand with his daughter against a tide of old beliefs, and about a girl who refused to let dreams be silenced.</p>
       
-      <p>Princess Mononoke teaches us that environmental consciousness isn't about returning to some pristine past, but about moving forward with wisdom, creating new relationships between human communities and the natural world based on respect, reciprocity, and the understanding that our fates are forever intertwined.</p>
+      <p>Hockey gave me more than medals and victories – it gave me an identity, a purpose, and the courage to inspire others. My life is proof that no taboo is stronger than determination, and no tradition can chain the heart of a dreamer.</p>
+      
+      <h3>Message to You</h3>
+      <p>If you are reading this, know that your circumstances do not define your destiny. Even if the world doubts you, even if your own home sets boundaries, one spark of courage can set you free. Find your field, find your passion – and play your heart out.</p>
+      
+      <h3>Takeaway</h3>
+      <p>Dreams are not limited by where you are born, but by whether you dare to chase them. Support can come from the most unexpected places, and sometimes all it takes is one person’s belief to turn impossibility into victory. Never let tradition, taboo, or fear silence your fire – because your story could inspire the next dreamer.</p>
     `
-  }
+}
+
 };
 
 // Category configurations
